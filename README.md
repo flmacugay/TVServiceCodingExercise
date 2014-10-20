@@ -40,42 +40,41 @@ Design and coding exercise in java
 <li>MOVIES_3D_ADD_ON</li>
 </ul>
 <br/>
-The third party service returns the following values:
-SERVICE_AVAILABLE 3DTV service is available for the given post code
-SERVICE_UNAVAILABLE 3DTV service is unavailable for the given post code
-SERVICE_PLANNED 3DTV service is not available right now, but it should be available
-within the next 3 months
-POSTCODE_INVALID The supplied postcode is invalid
-If the service is unavailable then a TechnicalFailureException is thrown.
-Acceptance Criteria
-Postcode Basket Expected Output
-Currently in a
-3D area
-3D compatible
-products in the
-basket
-Return relevant 3D addons
-N/A No products
-with 3D addons
-Return no 3D addons
-Currently,
-not in a 3D
-area, or
-technical
-failure occurs
-3D compatible
-products in the
-basket
-Return no 3D addons
-Invalid
-postcode
-3D compatible
-products in the
-basket
-Return no 3D addons
-and
-notify the client that the
-postcode was invalid
-You may choose any means of accepting input and producing output, including the use of a test
-harness.
-Try and spend no more than two hours on this problem.
+<p>The third party service returns the following values:</p><br/>
+<ul>
+<li>SERVICE_AVAILABLE - 3DTV service is available for the given post code</li>
+<li>SERVICE_UNAVAILABLE - 3DTV service is unavailable for the given post code</li>
+<li>SERVICE_PLANNED - 3DTV service is not available right now, but it should be available within the next 3 months</li>
+<li>POSTCODE_INVALID - The supplied postcode is invalid</li>
+</ul>
+<br>
+<p>If the service is unavailable then a TechnicalFailureException is thrown.</p><br/>
+
+<h2>Acceptance Criteria</h2><br/>
+<table>
+<tr>
+<th>Postcode</th>
+<th>Basket</th>
+<th>Expected Output</th>
+</tr>
+<tr>
+<td>Currently in a 3D area</td>
+<td>3D compatible products in the basket</td>
+<td>Return relevant 3D addons</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>No products with 3D addons</td>
+<td>Return no 3D addons</td>
+</tr>
+<tr>
+<td>Currently, not in a 3D area, or technical failure occurs</td>
+<td>3D compatible products in the basket</td>
+<td>Return no 3D addons</td>
+</tr>
+<tr>
+<td>Invalid postcode
+<td>3D compatible products in the basket</td>
+<td>Return no 3D addons and notify the client that the postcode was invalid</td>
+</tr>
+<br>
